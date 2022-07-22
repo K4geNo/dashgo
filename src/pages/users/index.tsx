@@ -114,7 +114,11 @@ export default function Users() {
 								</Tbody>
 							</Table>
 
-							<Pagination />
+							<Pagination
+								totalCountOfRegisters={200}
+								currentPage={1}
+								onChangePage={(page) => console.log(page)}
+							/>
 						</>
 					)}
 				</Box>
